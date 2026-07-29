@@ -29,6 +29,29 @@ body {
   width: 100%;
   padding: 24px 0;
   text-align: center;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.top-nav-links {
+  position: absolute;
+  right: clamp(1.5rem, 5vw, 4rem);
+}
+
+.nav-link {
+  color: #8a8d93;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ffffff;
 }
 
 .brand-logo {
