@@ -9,12 +9,16 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- favicon -->
+  <link rel="icon" type="image/png" href="images/icon.png">
 </head>
 <body>
 
   <!--Navigation -->
   <header class="top-nav">
-    <a href="index.html" class="brand-logo">MORROW GOODS</a>
+    <a href="index.html" class="brand-logo">
+      <img src="images/icon.png" alt="Morrow Goods" class="logo-img">
+    </a>
     <nav class="top-nav-links">
       <a href="#shop" class="nav-link">Shop</a>
       <a href="#our-story" class="nav-link">Our Story</a>
@@ -24,28 +28,24 @@
 
   <!-- Hero Section -->
   <main class="hero-section">
-    <div class="hero-container">
-      
-      <!-- Left Column -->
-      <div class="column left-col">
-        <h2>Materials</h2>
+    <div class="hero-split">
+
+      <!--Left Side-->
+      <div class="hero-content">
+        <span class="hero-label">New Season Collection</span>
+        <h1>Simple pieces for everyday living.</h1>
+        <p class="hero-description">Explore thoughtfully selected clothing and accessories designed for comfort, quality and effortless style.</p>
+        <div class="hero-buttons">
+          <a href="#shop" class="btn btn-primary">Shop Collection</a>
+          <a href="#our-story" class="btn btn-secondary">Our Story</a>
+        </div>
       </div>
 
-      <!-- Center Column (main visual)-->
-      <div class="column center-col">
-        <img src="popsicle.png" alt="3D Glass Popsicle Asset" class="feature-image">
+      <!--Right Side-->
+      <div class="hero-image">
+        <img src="images/popsicle.png" 
+        alt="Person wearing a relaxed neutral-toned outfit from the Morrow Goods collection" class="hero-img">
       </div>
-
-      <!-- Right Column -->
-      <div class="column right-col">
-        <h1>
-          Visual ingredients<br> 
-          for designers,<br> 
-          motion artists, and<br> 
-          <span class="gradient-text">creative</span> explorers.
-        </h1>
-      </div>
-
     </div>
   </main>
 
