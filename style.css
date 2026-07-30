@@ -243,6 +243,7 @@ body {
 
 .password-wrapper input {
   flex: 1;
+  min-width: 0;
 }
 
 .toggle-password {
@@ -333,4 +334,19 @@ body {
 
 .back-home-link:hover {
   color: #ffffff;
+}
+
+@media (max-width: 400px) {
+  .login-container {
+    padding: 1.25rem;
+  }
+
+  .toggle-password {
+    padding: 0 0.75rem;
+    font-size: 0.8rem;
+  }
+
+  .password-wrapper{
+    gap: 0.4rem;
+  }
 }
