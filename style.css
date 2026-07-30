@@ -27,17 +27,15 @@ body {
 /* --- Top Header --- */
 .top-nav {
   width: 100%;
-  padding: 24px 0;
-  text-align: center;
+  padding: 24px clamp(1.5rem, 5vw, 4rem);
   display:flex;
   align-items: center;
-  justify-content: center;
-  position: relative;
+  justify-content: space-between;
 }
 
 .top-nav-links {
-  position: absolute;
-  right: clamp(1.5rem, 5vw, 4rem);
+  display: flex;
+  gap: clamp(1rem, 3vw, 2rem);
 }
 
 .nav-link {
@@ -59,8 +57,14 @@ body {
   letter-spacing: 0.25em;
   color: #8a8d93;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 700;
   text-decoration: none;
+  background: linear-gradient(90deg, #a855f7 0%, #ec4899 50%, #f97316 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  display: inline-block;
 }
 
 /* --- Hero Section --- */
